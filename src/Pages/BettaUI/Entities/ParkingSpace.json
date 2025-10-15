@@ -1,0 +1,106 @@
+{
+  "name": "ParkingSpace",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the parking lot"
+    },
+    "area": {
+      "type": "string",
+      "description": "Area/neighborhood in Lagos",
+      "enum": [
+        "Victoria Island",
+        "Ikeja",
+        "Lekki Phase 1",
+        "Lekki Phase 2",
+        "Ikoyi",
+        "Yaba",
+        "Surulere",
+        "Ajah",
+        "Festac",
+        "Mainland",
+        "Other"
+      ]
+    },
+    "address": {
+      "type": "string",
+      "description": "Full address with landmarks"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Contact phone number"
+    },
+    "total_spaces": {
+      "type": "number",
+      "description": "Total parking spaces available"
+    },
+    "available_spaces": {
+      "type": "number",
+      "description": "Currently available spaces"
+    },
+    "amenities": {
+      "type": "array",
+      "description": "Available facilities",
+      "items": {
+        "type": "string",
+        "enum": [
+          "CCTV",
+          "Security Guard",
+          "Covered",
+          "EV Charging",
+          "Car Wash",
+          "Valet",
+          "24/7 Access",
+          "Well Lit",
+          "Wheelchair Access",
+          "Restroom"
+        ]
+      }
+    },
+    "price_per_hour": {
+      "type": "number",
+      "description": "Price per hour in Naira"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "GPS latitude"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "GPS longitude"
+    },
+    "qr_code": {
+      "type": "string",
+      "description": "Unique QR code for check-in"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "default": "active"
+    },
+    "operator_id": {
+      "type": "string",
+      "description": "ID of the operator who owns this space"
+    },
+    "operator_name": {
+      "type": "string",
+      "description": "Name of the operator"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Photo of the parking space"
+    }
+  },
+  "required": [
+    "name",
+    "area",
+    "address",
+    "phone",
+    "total_spaces",
+    "price_per_hour"
+  ]
+}

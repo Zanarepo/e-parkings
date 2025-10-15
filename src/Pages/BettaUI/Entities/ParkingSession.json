@@ -1,0 +1,153 @@
+{
+  "name": "ParkingSession",
+  "type": "object",
+  "properties": {
+    "parking_space_id": {
+      "type": "string",
+      "description": "ID of the parking space"
+    },
+    "parking_space_name": {
+      "type": "string",
+      "description": "Name of the parking space"
+    },
+    "parking_space_address": {
+      "type": "string",
+      "description": "Address of the parking space"
+    },
+    "driver_id": {
+      "type": "string",
+      "description": "ID of the driver"
+    },
+    "driver_name": {
+      "type": "string",
+      "description": "Name of the driver"
+    },
+    "driver_email": {
+      "type": "string",
+      "description": "Email of the driver"
+    },
+    "driver_phone": {
+      "type": "string",
+      "description": "Driver's phone number"
+    },
+    "vehicle_plate": {
+      "type": "string",
+      "description": "Vehicle plate number"
+    },
+    "check_in_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Check-in timestamp"
+    },
+    "check_out_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Check-out timestamp"
+    },
+    "pause_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When session was paused"
+    },
+    "resume_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When session was resumed"
+    },
+    "total_paused_duration": {
+      "type": "number",
+      "default": 0,
+      "description": "Total paused time in milliseconds"
+    },
+    "total_hours": {
+      "type": "number",
+      "description": "Total hours parked (excluding paused time)"
+    },
+    "hourly_rate": {
+      "type": "number",
+      "description": "Price per hour in Naira"
+    },
+    "total_amount": {
+      "type": "number",
+      "description": "Total amount paid in Naira"
+    },
+    "discount_percentage": {
+      "type": "number",
+      "default": 0,
+      "description": "Discount percentage applied"
+    },
+    "discount_amount": {
+      "type": "number",
+      "default": 0,
+      "description": "Discount amount in Naira"
+    },
+    "final_amount": {
+      "type": "number",
+      "description": "Final amount after discount"
+    },
+    "platform_commission": {
+      "type": "number",
+      "description": "Platform commission in Naira"
+    },
+    "operator_earnings": {
+      "type": "number",
+      "description": "Operator's net earnings in Naira"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "reserved",
+        "active",
+        "paused",
+        "completed",
+        "cancelled"
+      ],
+      "default": "active",
+      "description": "Session status"
+    },
+    "payment_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "paid",
+        "failed"
+      ],
+      "default": "pending"
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "wallet",
+        "card",
+        "cash"
+      ],
+      "description": "Payment method used"
+    },
+    "operator_id": {
+      "type": "string",
+      "description": "ID of the parking operator"
+    },
+    "operator_email": {
+      "type": "string",
+      "description": "Email of the parking operator"
+    },
+    "booking_code": {
+      "type": "string",
+      "description": "Unique booking reference code"
+    },
+    "reserved_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When reservation was made"
+    },
+    "distance_km": {
+      "type": "number",
+      "description": "Distance from user location"
+    }
+  },
+  "required": [
+    "parking_space_id",
+    "driver_id",
+    "hourly_rate"
+  ]
+}

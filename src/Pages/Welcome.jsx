@@ -236,7 +236,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              How SmartPark Works
+              How E-Parking Works
             </h2>
           </div>
 
@@ -311,13 +311,13 @@ export default function Home() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-emerald-100 mb-10">
-            Join thousands of drivers and parking owners already using SmartParking
+            Join thousands of drivers and parking owners already using E-Parking
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              onClick={() => handleGetStarted("/register")}
+              onClick={() => handleGetStarted("driver")}
               className="bg-white text-emerald-900 hover:bg-amber-50 text-xl px-10 py-7 rounded-2xl shadow-2xl font-bold group"
               disabled={isLoading}
             >
@@ -327,7 +327,7 @@ export default function Home() {
 
             <Button 
               size="lg"
-              onClick={() => handleGetStarted("/register")}
+              onClick={() => handleGetStarted("operator")}
               className="bg-amber-500 text-white hover:bg-amber-600 text-xl px-10 py-7 rounded-2xl shadow-2xl font-bold group"
               disabled={isLoading}
             >
@@ -342,6 +342,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-emerald-500 rounded-xl flex items-center justify-center">
+                <ParkingCircle className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <div className="font-bold text-white">E-Parking</div>
+                <div className="text-xs">Lagos Smart Parking</div>
+              </div>
+            </div>
+            
+            <div className="text-sm text-center md:text-left">
+              <p>© 2024 E-Parking Lagos. Solving parking one spot at a time.</p>
+              <p className="mt-1">Powered by AI • Built for Lagos • Trusted by thousands</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
