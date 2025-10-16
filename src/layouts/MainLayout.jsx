@@ -115,7 +115,7 @@ const MainLayout = () => {
             <div className="text-sm text-center md:text-left">
               <p>© {new Date().getFullYear()} SmartParking. Solving parking one spot at a time.</p>
               <p className="mt-1">
-                Powered by AI • Built for Lagos • Trusted by thousands
+                 Built for Everyone • Trusted by thousands
               </p>
             </div>
           </div>
