@@ -31,7 +31,7 @@ const MainLayout = () => {
             </li>
             <li>
                       <Link
-            to="/register"
+            to="/signup"
             className="px-4 py-2 font-semibold text-white bg-gradient-to-r from-emerald-400  to-yellow-600 rounded-lg shadow-md hover:from-emerald-600 hover:to-yellow-700 transition-all duration-200 active:scale-95"
           >
             Get Started
@@ -40,7 +40,7 @@ const MainLayout = () => {
             </li>
             <li>
               <Link
-                to="/sign-in"
+                to="/login"
                 className="text-gray-700 hover:text-emerald-600 transition-colors"
               >
                 Sign In
@@ -72,7 +72,7 @@ const MainLayout = () => {
               </li>
               <li>
                 <Link
-                  to="/register"
+                  to="/signup"
                   onClick={() => setMenuOpen(false)}
                   className="block text-gray-700 hover:text-emerald-600"
                 >
@@ -81,7 +81,7 @@ const MainLayout = () => {
               </li>
               <li>
                 <Link
-                  to="/sign"
+                  to="/login"
                   onClick={() => setMenuOpen(false)}
                   className="block text-gray-700 hover:text-emerald-600"
                 >
