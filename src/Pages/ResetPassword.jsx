@@ -94,7 +94,7 @@ export default function ResetPassword() {
             </p>
             <Button
               type="button"
-              onClick={() => navigate("/sign-in")}
+              onClick={() => navigate("/login")}
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-6 rounded-xl font-semibold"
             >
               Go to Sign In

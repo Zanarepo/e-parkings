@@ -28,7 +28,7 @@ export default function Register() {
     try {
       console.log("Registering user:", { ...formData, userType });
       alert("Signup successful!");
-      navigate("/sign-in");
+      navigate("/login");
     } catch (err) {
       console.error("Signup failed:", err);
       alert("Signup failed. Please try again.");
@@ -167,7 +167,7 @@ export default function Register() {
               Already have an account?{" "}
               <button
                 type="button"
-                onClick={() => navigate("/sign-in")}
+                onClick={() => navigate("/login")}
                 className="text-emerald-600 font-medium hover:underline"
               >
                 Sign in

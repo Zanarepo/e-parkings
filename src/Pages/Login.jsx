@@ -117,7 +117,7 @@ export default function SignIn() {
           <p className="text-center text-gray-600 text-sm mt-4">
             Don’t have an account?{" "}
             <button
-              onClick={() => navigate("/register")}
+              onClick={() => navigate("/signup")}
               className="text-emerald-600 font-semibold hover:underline"
             >
               Create one

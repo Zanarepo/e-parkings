@@ -73,7 +73,7 @@ export default function ForgotPassword() {
               Remembered your password?{" "}
               <button
                 type="button"
-                onClick={() => navigate("/sign-in")}
+                onClick={() => navigate("/login")}
                 className="text-emerald-600 font-semibold hover:underline"
               >
                 Back to Sign In
@@ -87,7 +87,7 @@ export default function ForgotPassword() {
             </p>
             <Button
               type="button"
-              onClick={() => navigate("/sign-in")}
+              onClick={() => navigate("/login")}
               className="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-6 rounded-xl font-semibold"
             >
               Return to Sign In
