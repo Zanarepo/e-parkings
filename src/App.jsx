@@ -9,7 +9,6 @@ import UsersLayout from "./layouts/UsersLayout";
 // Pages
 import Home from "./Pages/Home";
 import ParkingSpaceDetails from "./Pages/ParkingSpaceDetails";
-import Bookings from "./pages/Bookings";
 import Login from "./Pages/Login";
 import Register from "./pages/Register";
 import DriverDashboard from "./Pages/DriverDashboard";
@@ -38,8 +37,6 @@ const App = () => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          
-          <Route path="/bookings" element={<Bookings />} />
           <Route path="/test" element={<Test />} />
           <Route path="/role-selection" element={<RoleSelection />} />
           <Route path="/sign-in" element={<Login />} />

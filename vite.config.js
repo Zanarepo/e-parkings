@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/', // 👈 this ensures routes and assets resolve correctly
   plugins: [react()],
   resolve: {
     alias: {
