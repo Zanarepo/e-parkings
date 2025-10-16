@@ -10,7 +10,7 @@ import UsersLayout from "./layouts/UsersLayout";
 import Home from "./Pages/Home";
 import ParkingSpaceDetails from "./Pages/ParkingSpaceDetails";
 import Login from "./Pages/Login";
-import Register from "./pages/Register";
+import Register from "./Pages/Register";
 import DriverDashboard from "./Pages/DriverDashboard";
 import ScanQRCode from "./Pages/ScanQRCode";
 import MyBookings from "./Pages/MyBookings";
